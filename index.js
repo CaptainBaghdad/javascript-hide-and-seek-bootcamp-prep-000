@@ -10,19 +10,19 @@ function nestedTarget(){
 
 
 function deepestChild(){
-var deep = document.getElementById('grand-node').querySelectorAll('div');
-return deep[deep.length-1];
+var dc = document.getElementById('grand-node').querySelectorAll('div');
+return dc[dc.length-1];
 
 }
 
 function increaseRankBy(n){
-  var upRank = document.getElementById('app').querySelectorAll('ul.ranked-list');
+  var glowUp = document.getElementById('app').querySelectorAll('ul.ranked-list');
   
-  for (let i = 0; i < upRank.length; i++){
-  upRank[i].innerHTML = ((parseInt(upRank[i].innerHTML)) + n);
+  for (let i = 0; i < glowUp.length; i++){
+  glowUp[i].innerHTML = ((parseInt(glowUp[i].innerHTML)) + n);
   
   
   }
-  //return upRank;
+  //return glowUp;
   
 }
